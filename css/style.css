@@ -1,0 +1,23 @@
+
+
+
+
+
+
+header {
+    background-color: rgb(83, 153, 233);
+    color: rgb(0, 0, 0);
+    padding: 300px;
+    text-align: center;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
