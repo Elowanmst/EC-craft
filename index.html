@@ -26,6 +26,7 @@
                 <a href="#site">Site sur mesure</a>
                 <a href="#wordpress">Wordpress</a>
                 <a href="#projets">Il nous font confiance</a>
+                <a href="apropos.html">A propos de nous</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="menu-icon">
@@ -41,6 +42,109 @@
             <h2>Nos Site sur mesure pour vous</h2>
             <p>Vous avez un projet de site internet ? Nous vous accompagnons dans la création de votre site sur mesure. Nous vous proposons un site qui vous ressemble et qui correspond à vos attentes.</p>
         </div>
+    </section>
+
+    <section id="wordpress">
+        <div class="wordpress">
+            <h2>Wordpress</h2>
+            <p>Vous avez un projet de site internet ? Nous vous accompagnons dans la création de votre site sur mesure. Nous vous proposons un site qui vous ressemble et qui correspond à vos attentes.</p>
+        </div>
+    </section>
+    
+    <section id="projets">
+        <div class="projets">
+            <h2>Ils nous font confiance</h2>
+            <p>Vous avez un projet de site internet ? Nous vous accompagnons dans la création de votre site sur mesure. Nous vous proposons un site qui vous ressemble et qui correspond à vos attentes.</p>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2>Un projet de site web qui vous correspond ? Contactez nous !</h2>
+
+            <form id="form" action="https://api.web3forms.com/submit" method="POST"></form>
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="">
+
+                <input type="hidden" name="subject" value="Demande de contact">
+                
+                <!-- Form Inputs. Each input must have a name="" attribute -->
+                <ul>
+                    <h2>Une idée ? Contactez-nous !</h2>
+                    <il>
+                        <!-- <label for="prenom">Prénom</label> -->
+                        <input type="text" name="Prenom" placeholder="Prenom*"required>
+                    
+                        <!-- <label for="prenom">Nom</label> -->
+                        <input type="text" name="Nom" placeholder="Nom*"required>
+
+                        <input type="text" name="Entreprise" placeholder="Entreprise">
+                    </il>   
+                    <il>
+                        <!-- <label for="mail">E-mail</label> -->
+                        <input type="email" name="email" placeholder="Email*"required>
+                    </il>  
+                    <il>  
+                        <!-- <label for="tel">Téléphone</label> -->
+                        <input type="tel" name="telephone" placeholder="Numéro de téléphone*" required>
+                    </il>
+                    <il>    
+                        <!-- <label for="msg">Idée du tattoo</label> -->
+                        <textarea name="idée du site" placeholder="idée du site (type ; e-commerce, vitrine ect...)" required></textarea>
+                    </il>   
+                   
+                </ul>    
+
+                <div class=h-captcha data-captcha=true></div>
+
+               
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             
+                
+                <input type="hidden" name="redirect" value="https://entraks-tattoo-shop.vercel.app/"> 
+               
+
+
+
+                    <script>
+                        const form = document.getElementById('tattooForm');
+                        const submitButton = document.getElementById('bouti');
+                    
+                        form.addEventListener('submit', function(e) {
+                            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+                    
+                            if (!hCaptcha) {
+                                e.preventDefault(); 
+                                alert("Veuillez remplir le captcha");
+                                return;
+                            }
+                    
+                         
+                            const confirmation = confirm("Êtes-vous sûr de vouloir envoyer le formulaire ?");
+                            if (!confirmation) {
+                                e.preventDefault(); 
+                            }
+                        });
+                    </script>
+
+
+
+            
+                <button id="bouti" class=bout type="submit">Envoyer</button>
+            
+            </form>
+
+           
+
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© EC-Craft | 2025</p>
+    </footer>
             
 </body>
