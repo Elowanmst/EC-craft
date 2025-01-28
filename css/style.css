@@ -76,21 +76,46 @@ nav {
 
 
 
-p {
+p{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
     margin: 0 0 20px;
+    font-weight: 300;
 }
-h1 {
+h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 100px;
     font-weight: 700;
     line-height: 1.5;
     margin: 0 0 20px;
+    font-weight: 600;
 }
-
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    font-weight: 500;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    font-weight: 500;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    font-weight: 500;
+}
 
 
 
