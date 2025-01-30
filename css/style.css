@@ -190,6 +190,10 @@ p{
     font-weight: 300;
     text-align: center;
 }
+p.liste{
+   
+    text-align: left;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
