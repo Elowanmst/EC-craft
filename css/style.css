@@ -114,6 +114,24 @@ nav {
     background-color: #ee5b73;
 }
 
+.salut {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(83, 82, 82, 0.5);
+    transition: transform 0.5s ease-in-out;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+} 
+
+
+
 
 
 div.st{
@@ -156,21 +174,7 @@ div.pjt{
     margin-top: 20px;
     flex-direction: row;
 }
-.salut{
-    flex: 0.35;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    padding: 20px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(83, 82, 82, 0.5);
-    transition: transform 0.5s ease-in-out;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
+
 
 .contact{
     margin-top: 100px;
@@ -232,6 +236,101 @@ h4{
     text-align: center;
     color: #74a7ff;
 }
+
+
+/* Style pour le formulaire */
+#contact {
+    background-color: #ffffff; 
+    color: #000000; /* Texte blanc pour le contraste */
+    font-family: 'almendra', serif; /* Police utilisée sur le site */
+    padding: 70px;
+    padding-top: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(83, 82, 82, 0.5);
+    max-width: 600px;
+    margin: 20px auto;
+    align-items: center;
+    
+}
+#contact ::placeholder {
+    font-family: 'almendra', serif; /* Police utilisée sur le site */
+}
+
+#contact ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+#contact li {
+    margin-bottom: 500px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #010101; /* Une touche de couleur pour les labels */
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background-color: #ffffff; 
+    color: #040404;
+    box-shadow: 0px 4px 10px rgba(83, 82, 82, 0.5);
+    margin-top: 35px;
+}
+
+#contact textarea {
+    resize: none; /* Empêche le redimensionnement par défaut */
+    height: 100px; /* Taille par défaut */
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #e6e4e4; /* Change la bordure au focus */
+    background-color: #ffffff; /* Fait ressortir le champ */
+}
+
+
+
+#contact button.bout {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'almendra', serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 35px;
+}
+
+#contact button.bout:hover {
+    background-color: #000000;
+    color: #ff002b;
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+#contact button.bout:active {
+    transform: scale(0.95); /* Rétrécissement au clic */
+}
+
+
 
 
 
