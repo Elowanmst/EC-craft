@@ -18,3 +18,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/gif" href="" />
 </head>
+
+<body>
+    <header>
+        <!-- <div class="nom_logo">        
+        </div> -->
+        <nav class="nav"> 
+            <div class="nav_center">
+                <div class="element_nav">
+                    <a href="index.html">Accueil</a>
+                    <a href="realisation.html">Nos realisations</a>
+                    <a href="service.html">Nos services</a>
+                    <a href="apropos.html">A propos de nous</a>
+                    <a href="#contact">Contact</a>
+                    <a id="devis" href="devis.html">demande de devis</a>
+                </div>
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="header">
+            <h1 id="titre">EC-Craft</h1>
+            <h2 id="sous-titre">conception et realisation de site web à votre image</h2>
+            <p id="textsous">Loire Atlantique, Bretagne, Vendée</p>
+        </div>    
+                
+    </header> 
+
+<section id="contact">
+    <div class="contact">
+        <h3>Vous voulez estimer votre création de site web ?<br>Envoyer nous un mail !</h3>
+
+        <form id="form" action="https://api.web3forms.com/submit" method="POST"></form>
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="">
+
+            <input type="hidden" name="subject" value="Devis">
+            
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <ul>
+                
+                <il>
+                    <!-- <label for="prenom">Prénom</label> -->
+                    <input type="text" name="Prenom" placeholder="Prenom*"required>
+                
+                    <!-- <label for="prenom">Nom</label> -->
+                    <input type="text" name="Nom" placeholder="Nom*"required>
+
+                    <input type="text" name="Entreprise" placeholder="Entreprise">
+                </il>   
+                <il>
+                    <!-- <label for="mail">E-mail</label> -->
+                    <input type="email" name="email" placeholder="Email*"required>
+                </il>  
+                <il>  
+                    <!-- <label for="tel">Téléphone</label> -->
+                    <input type="tel" name="telephone" placeholder="Numéro de téléphone*" required>
+                </il>
+                <il>    
+                    <!-- <label for="msg">Idée du tattoo</label> -->
+                    <textarea name="idée du site" placeholder="idée du site (type ; e-commerce, vitrine ect...)" required></textarea>
+                </il>   
+               
+            </ul>    
+
+            <div class=h-captcha data-captcha=true></div>
+
+           
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            
+            <input type="hidden" name="redirect" value="https://entraks-tattoo-shop.vercel.app/"> 
+
+</body>            
+           
+

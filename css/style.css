@@ -11,11 +11,12 @@
 
 header {
     color: rgb(0, 0, 0);
-    padding: 300px;
+    padding: 250px;
     text-align: center;
     background: -webkit-linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
     background-size: 100% 100%;
 }
+
 
 .triangle {
     width: 0;
@@ -78,6 +79,7 @@ nav {
     border-radius: 50px;
     padding: 30px 50px;
     box-shadow: 0px 4px 10px rgba(83, 82, 82, 0.5);
+    align-items: center;
 }
 
 .element-nav_hidden {
@@ -129,6 +131,20 @@ nav {
     margin-left: 30px;
     margin-right: 30px;
 } 
+button.bt-loc{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #74a7ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 35px;
+    align-items: center;
+    justify-content:end;
+}
 
 
 
@@ -168,6 +184,7 @@ div.pjt{
     margin-right: 30px;
 }
 
+
 .contenu-projet{
     display: flex;
     justify-content: space-between;
@@ -190,10 +207,10 @@ p{
     font-weight: 300;
     text-align: center;
 }
-p.liste{
-   
+ p.liste{
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
-}
+} 
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
@@ -246,7 +263,7 @@ h4{
 #contact {
     background-color: #ffffff; 
     color: #000000; /* Texte blanc pour le contraste */
-    font-family: 'almendra', serif; /* Police utilisée sur le site */
+    font-family: 'Montserrat', sans-serif; /* Police utilisée sur le site */
     padding: 70px;
     padding-top: 25px;
     border-radius: 20px;
@@ -257,7 +274,7 @@ h4{
     
 }
 #contact ::placeholder {
-    font-family: 'almendra', serif; /* Police utilisée sur le site */
+    font-family: 'Montserrat', sans-serif; /* Police utilisée sur le site */
 }
 
 #contact ul {
@@ -322,11 +339,12 @@ h4{
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 35px;
+    align-items: center;
 }
 
 #contact button.bout:hover {
     background-color: #000000;
-    color: #ff002b;
+    color: #74a7ff;
     transform: scale(1.05); /* Agrandissement au survol */
 }
 
@@ -334,7 +352,9 @@ h4{
     transform: scale(0.95); /* Rétrécissement au clic */
 }
 
-
+#bouti.bout{
+    align-items: center;
+}
 
 
 
@@ -345,3 +365,19 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+
+/*header realisation*/
+
+.tete2 {
+    color: rgb(0, 0, 0);
+    padding: 200px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    background-size: 100% 100%;
+}
+
+
+
+
+
