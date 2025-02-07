@@ -18,6 +18,13 @@
 
 
 <body>
+    <div id="navbar-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("navbar-container").innerHTML = data);
+    </script>
+    
     <p>EC-Craft entreprise créée en 2025, par deux jeunes développeur motivés et actifs</p>
     <p>Nous créons, et réalisons des site web en fonction de vos besoins</p>
     <p>Nous serons ravis d’échanger avec vous sur votre marque et vos objectifs commerciaux, que ce soit pour le référencement d’un site ou la création de site web</p>

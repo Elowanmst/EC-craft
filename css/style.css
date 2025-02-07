@@ -1,23 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
-* {
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
-
-header {
-    color: rgb(0, 0, 0);
-    padding: 250px;
-    text-align: center;
-    background: -webkit-linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
-    background-size: 100% 100%;
-}
 
 
 .triangle {
@@ -61,14 +53,20 @@ header {
 
 
 
-.nav {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    position: fixed;
-    top: 30px;
+.hero{
+    color: rgb(0, 0, 0);
+    padding: 250px 0 250px 0;
     text-align: center;
-    align-items: center;
+    background: -webkit-linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    background-size: 100% 100%;
+}
+#navbar-container{
+    display: grid;
+    place-items: center; /* Centre verticalement et horizontalement */
+    position: fixed;
+    top: 3%;
+    left: 0;
+    width: 100%;
 }
 .element_nav{
     transition: transform 0.5s ease-in-out;
@@ -78,7 +76,6 @@ header {
     border-radius: 50px;
     padding: 30px 50px;
     box-shadow: 0px 4px 10px rgba(83, 82, 82, 0.5);
-    align-items: center;
 }
 
 .element-nav_hidden {
@@ -237,6 +234,7 @@ div.pjt{
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Évite la répétition de l'image */
     padding: 20px;
+    padding-bottom: 90px;
 }
 
 .card{
@@ -312,6 +310,7 @@ h1{
 }
 #sous-titre{
     color: #ffffff;
+    text-transform: uppercase;
 }
 #textsous{
     color: #ffffff;
