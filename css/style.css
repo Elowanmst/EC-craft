@@ -331,6 +331,7 @@ html, body {
     transform: scale(1.05); /* Agrandissement au survol */
 }
 
+/* BOUTON COOL */
 .bt-cool{
     box-sizing: border-box;
     appearance: none;
@@ -356,7 +357,7 @@ html, body {
     outline: 0;
 }
 
-
+/* EFFECT BUTTONs */
 .first{
     border-color: #2a68cb;
     color: #ffffff;
@@ -367,9 +368,51 @@ html, body {
     box-shadow: 0 0 10px 0 #2a68cb inset, 0 0 10px 4px #2a68cb;
 }
 
+.second{
+    border-color: #2a68cb;
+    color: #2a68cb;
+    background: linear-gradient(45deg, #2a68cb 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 350ms ease-in-out;
+}
+.second:hover {
+    background-position: 0;
+    color: #ffffff;
+}
+
+.third{
+    border-color: #2a68cb; 
+    border-radius: 0;
+    color: #2a68cb; 
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+}
+.third:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #2a68cb;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+}
+.third:hover {
+    color: #fff;
+}
+.third:hover:after {
+    width: 110%;
+}
 
 
 
+/* CSS EN BORDEL - À TRIER */
 
 p{
     line-height: 1.5;
