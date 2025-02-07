@@ -326,7 +326,6 @@ html, body {
     text-decoration: none;
 }
 .bt-loc:hover {
-    background-color: #542323;
     color: #ffffff;
     transform: scale(1.05); /* Agrandissement au survol */
 }
