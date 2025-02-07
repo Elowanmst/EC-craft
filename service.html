@@ -18,5 +18,12 @@
 
 
 <body>
-    <p>EC-Craft entreprise créer en 2025, par deux jeunes devellopeur motivé et actif</p>
+    <div id="navbar-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("navbar-container").innerHTML = data);
+    </script>
+
+    <p>EC-Craft, entreprise crée en 2025, par deux jeunes développeurs motivés et actifs</p>
 </body>

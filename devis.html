@@ -21,31 +21,18 @@
 
 <body>
     <header>
-        <!-- <div class="nom_logo">        
-        </div> -->
-        <nav class="nav"> 
-            <div class="nav_center">
-                <div class="element_nav">
-                    <a href="index.html">Accueil</a>
-                    <a href="realisation.html">Nos realisations</a>
-                    <a href="service.html">Nos services</a>
-                    <a href="apropos.html">A propos de nous</a>
-                    <a href="#contact">Contact</a>
-                    <a id="devis" href="devis.html">demande de devis</a>
-                </div>
-                <div class="menu-icon">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </div>
-        </nav>
+        <div id="navbar-container"></div>
+        <script>
+          fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data);
+        </script>
     
-        <div class="header">
+        <!-- <div class="header">
             <h1 id="titre">EC-Craft</h1>
             <h2 id="sous-titre">conception et realisation de site web à votre image</h2>
             <p id="textsous">Loire Atlantique, Bretagne, Vendée</p>
-        </div>    
+        </div>     -->
                 
     </header> 
 
