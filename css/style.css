@@ -49,12 +49,27 @@ html, body {
     height: 0;
     border-left: 0vw solid transparent;
     border-right: 100vw solid transparent;
-    border-bottom: 120px solid #74a7ff;
+    border-bottom: 120px solid #2a68cb;
     margin-top: 150px;
     margin-bottom: 0px;
     transition: all 0.5s;
 }
-
+.triangle-3:hover{   
+    border-bottom: 120px solid #d3e2ff;  
+} 
+.triangle-4 {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-right: 0vw solid transparent;
+    border-top: 120px solid #2a68cb;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    transition: all 0.5s;
+}
+.triangle-4:hover{   
+    border-top: 120px solid #d3e2ff;  
+} 
 
 /* CSS HEADER - NAVBAR - HERO */
 .hero{
