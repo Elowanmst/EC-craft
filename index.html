@@ -14,7 +14,8 @@
     <meta name="author" content="EC-Craft">
     <title>EC-Craft</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../js/index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/index.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/gif" href="" />
 </head>
@@ -29,34 +30,26 @@
         </script>
 
         <div class="hero">
-            <h1 id="titre">EC-Craft</h1>
-            <h2 id="sous-titre">conception et realisation de site web à votre image</h2>
-            <p id="textsous">📍 Loire Atlantique, Bretagne, Vendée</p>
+            <h1 class="titre">EC-Craft</h1>
+            <h2 class="sous-titre">conception et realisation de site web à votre image</h2>
+            <p class="textsous">📍 Loire Atlantique, Bretagne, Vendée</p>
         </div>
     </header>
-                
-    
-
-   <section>
-
-   </section>
-    
 
     <section id="solution">
-        <div class="titre">
-            <div class="st">
-                <h3>UN SITE SUR-MESURE ADAPTÉ À VOS BESOINS</h3>
-                <p>Vous avez un projet de site internet ? <br> Nous vous accompagnons dans la création de votre site sur mesure. <br>Nous proposons des sites web qui vous ressemble et qui correspond à vos attentes.</p>
-            </div>
+        <div>
+            <h3>UN SITE SUR-MESURE ADAPTÉ À VOS BESOINS</h3>
+            <p>Vous avez un projet de site internet ? <br> Nous vous accompagnons dans la création de votre site sur mesure. <br>Nous proposons des sites web qui vous ressemble et qui correspond à vos attentes.</p>
         </div>
 
         <div class="triangle-3"></div>
     
-        <div class="contenu-solution">
-            <div class="slt">
+        <div class="solution-content">
+            <div>
                 <h3 class="wh">NOS SOLUTIONS</h3>
                 <p>Nous proposons plusieurs solutions,<br> tels qu'un site vitrine, un site de e-commerce ou bien une refonte ou une creation de site Wordpress.<br> Nous sommes la pour vous conseiller selon vos besoins</p>
             </div>
+            
             <div class="solution-cards">
                 <div class="card">
                     <h4>Site vitrine</h4>
@@ -116,32 +109,33 @@
     <div class="triangle"></div>
    
     
-    <section id="projets">
-        <div class="pjt">
+    <section id="projects">
+        <div>
             <h3>ILS NOUS FONT CONFIANCE</h3>
             <p>Vous avez un projet de site internet ? <br>Nous vous accompagnons dans la création de votre site sur mesure.<br>Des entreprises nous ont deja fait confiance.</p>
         </div>
-        <div class="contenu-projet">
-            <div class="salut">
+
+        <div class="project-content">
+            <div class="card-2 animatable fadeInUp">
                 <h4>Site vitrine pour Entraks Tattoo Shop</h4>
                 <p>realisation d'un site vitrine pour le salon de tatouage Entraks Tattoo Shop</p>
                 <p>conception, realisation, referencement SEO</p>
                 <img src="" alt="">
-                <button class="bt-loc" onclick="location.href='realisation.html'">En savoir +</button>
+                <a class="bt-loc" href="realisation.html">En savoir +</a>
             </div>
-            <div class="salut">
+            <div class="card-2 animatable fadeInUp">
                 <h4>Refonte Wordpress pour Coup D'envoi</h4>
                 <p>refonte d'un site wordpress, de l'idée du client a la realisation</p>
                 <p>realisation, referencement SEO</p>
                 <img src="" alt="">
-                <button class="bt-loc" onclick="location.href='realisation.html'">En savoir +</button>
+                <a class="bt-loc" href="realisation.html">En savoir +</a>
             </div>
-            <div class="salut">
+            <div class="card-2 animatable fadeInUp">
                 <h4>Site de e-commerce pour Astrolab</h4>
                 <p>Conception du site de e-commerce de Astrolab, une petite boite qui viens de ce monter sur la vente de tee-shirt ephemere</p>
                 <p>conception, realisation, referencement SEO</p>
                 <img src="" alt="">
-                <button class="bt-loc" onclick="location.href='realisation.html'">En savoir +</button>
+                <a class="bt-loc" href="realisation.html">En savoir +</a>
             </div>
         </div>
 
@@ -151,7 +145,7 @@
     
 
     <section id="contact">
-        <div class="contact">
+        <div>
             <h3>Un projet ? <br>Contactez nous !</h3>
 
             <form id="form" action="https://api.web3forms.com/submit" method="POST"></form>
@@ -163,7 +157,6 @@
                 
                 <!-- Form Inputs. Each input must have a name="" attribute -->
                 <ul>
-                    
                     <il>
                         <!-- <label for="prenom">Prénom</label> -->
                         <input type="text" name="Prenom" placeholder="Prenom*"required>
@@ -184,8 +177,7 @@
                     <il>    
                         <!-- <label for="msg">Idée du tattoo</label> -->
                         <textarea name="idée du site" placeholder="message" required></textarea>
-                    </il>   
-                   
+                    </il> 
                 </ul>    
 
                 <div class=h-captcha data-captcha=true></div>
@@ -200,7 +192,7 @@
 
 
                     <script>
-                        const form = document.getElementById('tattooForm');
+                        const form = document.getElementById('form');
                         const submitButton = document.getElementById('bouti');
                     
                         form.addEventListener('submit', function(e) {
@@ -237,5 +229,5 @@
     <footer>
         <p>© EC-Craft | 2025</p>
     </footer>
-            
+    <script type="text/javascript" src="/js/index.js"></script>
 </body>                      
