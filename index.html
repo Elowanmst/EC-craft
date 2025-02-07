@@ -149,7 +149,7 @@
         <div>
             <h3>Un projet ? <br>Contactez nous !</h3>
 
-            <form id="form" action="https://api.web3forms.com/submit" method="POST"></form>
+            <form id="form-ec-craft" action="https://api.web3forms.com/submit" method="POST">
 
                 <!-- Replace with your Access Key -->
                 <input type="hidden" name="access_key" value="aebc34df-b537-4db2-a0c4-b2da7b9b2514">
@@ -181,7 +181,7 @@
                     </il> 
                 </ul>    
 
-                <div class=h-captcha data-captcha=true></div>
+                <div class=h-captcha data-captcha=true></div> 
 
                
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -189,29 +189,29 @@
                 
                 <input type="hidden" name="redirect" value=""> 
                
+                <input type="hidden" name="redirect" value="#top">
 
 
-
-                    <script>
-                        const form = document.getElementById('form');
-                        const submitButton = document.getElementById('bouti');
-                    
-                        form.addEventListener('submit', function(e) {
-                            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-                    
-                            if (!hCaptcha) {
-                                e.preventDefault(); 
-                                alert("Veuillez remplir le captcha");
-                                return;
-                            }
-                    
-                         
-                            const confirmation = confirm("Êtes-vous sûr de vouloir envoyer le formulaire ?");
-                            if (!confirmation) {
-                                e.preventDefault(); 
-                            }
-                        });
-                    </script>
+                <script>
+                    const form = document.getElementById('form-ec-craft');
+                    const submitButton = document.getElementById('bouti');
+                
+                    form.addEventListener('submit', function(e) {
+                        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+                
+                        if (!hCaptcha) {
+                            e.preventDefault(); 
+                            alert("Veuillez remplir le captcha");
+                            return;
+                        }
+                
+                     
+                        const confirmation = confirm("Êtes-vous sûr de vouloir envoyer le formulaire ?");
+                        if (!confirmation) {
+                            e.preventDefault(); 
+                        }
+                    });
+                </script>
 
 
 
@@ -219,6 +219,7 @@
                 <button id="bouti" class=bout type="submit">Envoyer</button>
             
             </form>
+            
 
            
 
