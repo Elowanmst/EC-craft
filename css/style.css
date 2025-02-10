@@ -245,7 +245,7 @@ html, body {
 .animated {
     visibility: visible;
     animation-fill-mode: both;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-play-state: running;
 }
 @keyframes fadeInUp {
@@ -290,7 +290,7 @@ html, body {
 .solution-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
     color: black;
 }
@@ -299,12 +299,11 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: top;
 
     padding: 20px;
     border-radius: 20px;
     margin: 30px;
-    box-sizing: border-box;
+    max-width: 500px;
 
     background-color: white;
     box-shadow: 0px 4px 10px rgba(83, 82, 82, 0.5);
@@ -315,10 +314,11 @@ html, body {
     transform: scale(1.009);
     cursor: pointer;
 }
-.card, .card-2 h4 {
-    font-size: 1.5rem;
+.card h4, .card-2 h4 {
+    font-size: 1.3rem;
     margin-bottom: 10px;
     color: #2a68cb;
+    text-align: center;
 }
 @media (max-width: 1000px) {
     .card {
@@ -351,10 +351,12 @@ html, body {
 .custom-list {
     list-style: none;
     padding-left: 0;
+    padding-top: 30px;
     line-height: 1.5;
     margin: 0 0 20px;
     font-weight: 300;
     text-align: center;
+
 }
   .custom-list li::before {
     content: "⭐"; /* Ou utiliser une icône */
@@ -364,7 +366,7 @@ html, body {
 
 /* CSS PROJECTS */
 #projects{
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 130px;
 }
 #projects h3{
@@ -536,17 +538,6 @@ h3{
     text-align: center;
     color: #74a7ff;
 }
-/* h4{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 0 0 20px;
-    font-weight: 500;
-    text-align: center;
-    color: #74a7ff;
-    text-transform: uppercase;
-} */
 
 
 /* CSS FORMULAIRE DE CONTACT */
@@ -663,6 +654,8 @@ footer {
     background: -webkit-linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #2a68cb,#74a7ff,#d3e2ff);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
     background-size: 100% 100%;
 }
+
+/* CSS SLIDER */
 
 
 
