@@ -410,8 +410,10 @@ html, body {
     justify-content: center;
     text-decoration: none;
     transition:opacity .2s;
+    
 
 }
+
 .card-back .card-icons a:hover{
     cursor:pointer;
     opacity: 0.7;
