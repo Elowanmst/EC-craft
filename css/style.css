@@ -341,6 +341,7 @@ html, body {
     position: absolute;
     height: 100%;
     width: 100%;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     padding: 16px;
     border-radius: 8px;
