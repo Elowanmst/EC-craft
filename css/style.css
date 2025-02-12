@@ -314,118 +314,13 @@ html, body {
     transform: scale(1.009);
     cursor: pointer;
 }
-.card h4, .card-2 h4 {
+.card h4, .card-2 h4, .card-3 h4 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #2a68cb;
     text-align: center;
 }
-.card-3{
-    margin: 0 auto;
-    width: 240px;
-    height: 320px;
-    perspective: 1000px;
-    text-align: center;
-}
-.card-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-.card-3:hover .card-inner{
-    transform: rotateY(180deg);
-}
-.card-front, .card-back{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 2);
-}
-.card-front{
-    background-image: url('../content/img/entraks-website.png');
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    overflow: hidden;
-}
-.card-front:before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height:100%;
-    top:0px;
-    background: linear-gradient(0deg, black, transparent);
-}
-.card-front .car-content{
-    z-index: 1;
-    color: white;
-}
-.card-front .car-content p{
-    color: #ececec;
-}
-.card-back{
-    transform: rotateY(180deg);
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.card-back .card-image{
-    width: 120px;
-    height: 120px;
-    margin: O auto;
-    border: solid 1px #ececec;
-    border-radius: 100%;
-    background-color: #000000;
-    background-size: cover;
-    background-position: center center;
-}
-.card-back p{
-    margin-top: 12px;
-}
-.card-back .card-icons{
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-}
-.card-back .card-icons a{
-    font-size: 18px;
-    color: white;
-    background:black;
-    width: 42px;
-    height: 42px;
-    border-radius: 100%;
-    margin: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition:opacity .2s;
-    
 
-}
-
-.card-back .card-icons a:hover{
-    cursor:pointer;
-    opacity: 0.7;
-}
-.card-front{
-    transition:opacity .6s;
-
-}
-.card:hover .card-front{
-    opacity: 0;
-}
 
 @media (max-width: 1000px) {
     .card {
@@ -482,8 +377,90 @@ html, body {
 .project-content{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
     flex-direction: row;
+}
+.containerz {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 130px;
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .scroll-container::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .item {
+    min-width: 400px;
+    max-height: 700px;
+  }
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 1200px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(22, 22, 22, 0.211) 0%, rgba(255, 255, 255, 0.133) 30%, rgba(255, 255, 255, 0) 80%);
+    z-index: -1;
+  }
+  @media (max-width: 1000px ) {
+    .nav-button::before {
+        display: none;
+      }
+    
+  }
+  .nav-button::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: solid white;
+    border-width: 4px 4px 0 0;
+    transform: rotate(-135deg);
+    margin: auto;
+  }
+
+  /* Orientation des flèches */
+.right::after {
+    transform: rotate(45deg);
+}
+  
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.7);
+}
+  
+.left {
+   left: 10px;
+}
+  
+  .right {
+    right: 10px;
 }
 .card-2 {
     flex: 0.35;
@@ -495,10 +472,122 @@ html, body {
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(83, 82, 82, 0.5);
     /* transition: transform 0.5s ease-in-out; */
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 30px;
 } 
+
+.card-3 {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    perspective: 1000px;
+    text-align: center;
+    cursor: pointer;
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.card-3.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* padding: 16px; */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-front {
+    /* background-image: url('../content/img/entraks.svg'); */
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+
+.entraks {
+    background-image: url('../content/img/entraks.svg');
+}
+.entraks-logo {
+    background-image: url('../content/img/Logo-entraks.svg');
+}
+
+
+.card-front:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.257), transparent); */
+}
+.card-front .car-content {
+    z-index: 1;
+    color: white;
+}
+.card-front .car-content p {
+    color: #ececec;
+}
+.card-back {
+    transform: rotateY(180deg);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-back .card-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: solid 1px #ececec;
+    border-radius: 100%;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-back p {
+    margin-top: 12px;
+}
+.card-back .card-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-back .card-icons a {
+    font-size: 18px;
+    color: white;
+    background: black;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: opacity .2s;
+}
+.card-back .card-icons a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
 
 /* BOUTON CLASSIQUE */
 .bt-loc{
@@ -768,3 +857,7 @@ footer {
 
 
 
+
+
+
+  

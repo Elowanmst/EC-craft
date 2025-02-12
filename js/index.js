@@ -52,3 +52,22 @@ window.onload = function () {
         console.error("Erreur : l'élément burger ou nav-links est introuvable.");
     }
 };
+
+const container = document.querySelector('.scroll-container');
+document.getElementById('prev').addEventListener('click', () => {
+  container.scrollBy({ left: -600, behavior: 'smooth' });
+});
+document.getElementById('next').addEventListener('click', () => {
+  container.scrollBy({ left: 600, behavior: 'smooth' });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".card-3");
+
+  cards.forEach(card => {
+      card.addEventListener("click", function () {
+          console.log("clicked"); // Vérification que l'événement fonctionne
+          this.classList.toggle("flipped");
+      });
+  });
+});
