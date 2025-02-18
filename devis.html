@@ -67,9 +67,20 @@
                     <!-- <label for="tel">Téléphone</label> -->
                     <input type="tel" name="telephone" placeholder="Numéro de téléphone*" required>
                 </il>
+                <li>
+                    <!-- <label for="type-site">Type de site</label> -->
+                    <select name="type-site" id="type-site" required>
+                        <option value="choix-presta" disabled selected>Choix de la prestation*</option>
+                        <option value="e-commerce">Site de E-commerce</option>
+                        <option value="vitrine">Site Vitrine</option>
+                        <option value="crea-wordpress">Création de site Wordpress</option>
+                        <option value="reft-wordpress">Refonte d'un site Wordpress</option>
+                        <option value="seo">SEO/Referencement</option>
+                    </select>
+                </li>
                 <il>    
                     <!-- <label for="msg">Idée du tattoo</label> -->
-                    <textarea name="idée du site" placeholder="idée du site (type ; e-commerce, vitrine ect...)" required></textarea>
+                    <textarea name="idée du site" placeholder="idée du site, et prestation supplémentaire" required></textarea>
                 </il>   
                
             </ul>    

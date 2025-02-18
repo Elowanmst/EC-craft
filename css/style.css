@@ -485,6 +485,7 @@ html, body {
     perspective: 1000px;
     text-align: center;
     cursor: pointer;
+    height: 510px;
 }
 .card-inner {
     position: relative;
@@ -523,6 +524,13 @@ html, body {
 }
 .entraks-logo {
     background-image: url('../content/img/Logo-entraks.svg');
+}
+.coupenvoie-logo{
+    background-image: url('../content/img/logoCDE-black.svg');
+
+}
+.coupenvoie{
+    background-image: url('../content/img/coupdenvoi-card.svg');
 }
 
 
