@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+</style>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EC-Craft vos concepteur et mise en service de site internet qui vous corresponde">
+    <meta name="keywords" content="site web, wordpress, hebergement, nantes, loire atlantique, bretagne, vendée">
+    <meta name="author" content="EC-Craft">
+    <title>EC-Craft</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/gif" href="" />
+</head>
+
+<body>
+    <header>
+        <div id="navbar-container"></div>
+        <script>
+          fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data);
+        </script>
+    
+        <!-- <div class="header">
+            <h1 id="titre">EC-Craft</h1>
+            <h2 id="sous-titre">conception et realisation de site web à votre image</h2>
+            <p id="textsous">Loire Atlantique, Bretagne, Vendée</p>
+        </div>     -->
+                
+    </header> 
+
+<section id="contact">
+    <div class="contact">
+        <h3>Vous voulez estimer votre création de site web ?<br>Envoyer nous un mail !</h3>
+
+        <form id="form" action="https://api.web3forms.com/submit" method="POST"></form>
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="aebc34df-b537-4db2-a0c4-b2da7b9b2514">
+
+            <input type="hidden" name="subject" value="Devis">
+            
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <ul>
+                
+                <il>
+                    <!-- <label for="prenom">Prénom</label> -->
+                    <input type="text" name="Prenom" placeholder="Prenom*"required>
+                
+                    <!-- <label for="prenom">Nom</label> -->
+                    <input type="text" name="Nom" placeholder="Nom*"required>
+
+                    <input type="text" name="Entreprise" placeholder="Entreprise">
+                </il>   
+                <il>
+                    <!-- <label for="mail">E-mail</label> -->
+                    <input type="email" name="email" placeholder="Email*"required>
+                </il>  
+                <il>  
+                    <!-- <label for="tel">Téléphone</label> -->
+                    <input type="tel" name="telephone" placeholder="Numéro de téléphone*" required>
+                </il>
+                <li>
+                    <!-- <label for="type-site">Type de site</label> -->
+                    <select name="type-site" id="type-site" required>
+                        <option value="choix-presta" disabled selected>Choix de la prestation*</option>
+                        <option value="e-commerce">Site de E-commerce</option>
+                        <option value="vitrine">Site Vitrine</option>
+                        <option value="crea-wordpress">Création de site Wordpress</option>
+                        <option value="reft-wordpress">Refonte d'un site Wordpress</option>
+                        <option value="seo">SEO/Referencement</option>
+                    </select>
+                </li>
+                <il>    
+                    <!-- <label for="msg">Idée du tattoo</label> -->
+                    <textarea name="idée du site" placeholder="idée du site, et prestation supplémentaire" required></textarea>
+                </il>   
+               
+            </ul>    
+
+            <div class=h-captcha data-captcha=true></div>
+
+           
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            
+            <input type="hidden" name="redirect" value="https://entraks-tattoo-shop.vercel.app/"> 
+
+</body>            
+           
+

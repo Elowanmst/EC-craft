@@ -1,98 +1,119 @@
 <!DOCTYPE html>
-<html lang="fr">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-</style>
+<html lang="en" >
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EC-Craft vos concepteur et mise en service de site internet qui vous corresponde">
-    <meta name="keywords" content="site web, wordpress, hebergement, nantes, loire atlantique, bretagne, vendée">
-    <meta name="author" content="EC-Craft">
-    <title>EC-Craft</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../js/index.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/gif" href="" />
+  <meta charset="UTF-8">
+  <title>Devis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./css/style-devis.css">
+<link rel="stylesheet" href="./css/style.css">
+<script type="text/javascript" src="/js/index.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
     <header>
-        <div id="navbar-container"></div>
+    <div id="navbar-container"></div>
         <script>
           fetch("navbar.html")
             .then(response => response.text())
             .then(data => document.getElementById("navbar-container").innerHTML = data);
         </script>
-    
-        <!-- <div class="header">
-            <h1 id="titre">EC-Craft</h1>
-            <h2 id="sous-titre">conception et realisation de site web à votre image</h2>
-            <p id="textsous">Loire Atlantique, Bretagne, Vendée</p>
-        </div>     -->
-                
-    </header> 
+    </header>    
 
-<section id="contact">
-    <div class="contact">
-        <h3>Vous voulez estimer votre création de site web ?<br>Envoyer nous un mail !</h3>
+    <div class="ripple-background">
+    <div class="circle xxlarge shade1"></div>
+    <div class="circle xlarge shade2"></div>
+    <div class="circle large shade3"></div>
+    <div class="circle medium shade4"></div>
+    <div class="circle small shade5"></div>
+  </div>
 
-        <form id="form" action="https://api.web3forms.com/submit" method="POST"></form>
+  
 
-            <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="aebc34df-b537-4db2-a0c4-b2da7b9b2514">
+  <div class="container">
+    <div class="text">
+        Demande de devis
+    </div>
+    <form id="form-ec-craft" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="aebc34df-b537-4db2-a0c4-b2da7b9b2514">
+        <input type="hidden" name="subject" value="Demande de devis">
+        <div class="form-row">
+            <div class="input-data">
+                <input type="text" name="prenom" required>
+                <div class="underline"></div>
+                <label for="prenom">Prenom</label>
+            </div>
+            <div class="input-data">
+                <input type="text" name="nom" required>
+                <div class="underline"></div>
+                <label for="nom">Nom</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data">
+                <input type="email" name="email" required>
+                <div class="underline"></div>
+                <label for="email">e-mail</label>
+            </div>
+            <div class="input-data">
+            <input type="tel" required>
+            <div class="underline"></div>
+            <label for="tel">Téléphone</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data">
+                <select name="type-site" id="type-site" required>
+                    <option value="choix-presta" disabled selected>Choix de la prestation*</option>
+                    <option value="e-commerce">Site de E-commerce</option>
+                    <option value="vitrine">Site Vitrine</option>
+                    <option value="crea-wordpress">Création de site Wordpress</option>
+                    <option value="reft-wordpress">Refonte d'un site Wordpress</option>
+                    <option value="seo">SEO/Referencement</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data textarea">
+                <textarea name="message" rows="8" cols="80" required></textarea>
+                <div class="underline"></div>
+                <label for="message">Idée du site, et prestation supplémentaire</label>
+            </div>
+        </div>
+        <div class="h-captcha" data-captcha="true"></div>
+        <div class="form-row submit-btn">
+            <div class="input-data">
+                <div class="inner"></div>
+                <input type="submit" value="Envoyer">
+            </div>
+        </div>
+    </form>
+</div>
 
-            <input type="hidden" name="subject" value="Devis">
-            
-            <!-- Form Inputs. Each input must have a name="" attribute -->
-            <ul>
-                
-                <il>
-                    <!-- <label for="prenom">Prénom</label> -->
-                    <input type="text" name="Prenom" placeholder="Prenom*"required>
-                
-                    <!-- <label for="prenom">Nom</label> -->
-                    <input type="text" name="Nom" placeholder="Nom*"required>
-
-                    <input type="text" name="Entreprise" placeholder="Entreprise">
-                </il>   
-                <il>
-                    <!-- <label for="mail">E-mail</label> -->
-                    <input type="email" name="email" placeholder="Email*"required>
-                </il>  
-                <il>  
-                    <!-- <label for="tel">Téléphone</label> -->
-                    <input type="tel" name="telephone" placeholder="Numéro de téléphone*" required>
-                </il>
-                <li>
-                    <!-- <label for="type-site">Type de site</label> -->
-                    <select name="type-site" id="type-site" required>
-                        <option value="choix-presta" disabled selected>Choix de la prestation*</option>
-                        <option value="e-commerce">Site de E-commerce</option>
-                        <option value="vitrine">Site Vitrine</option>
-                        <option value="crea-wordpress">Création de site Wordpress</option>
-                        <option value="reft-wordpress">Refonte d'un site Wordpress</option>
-                        <option value="seo">SEO/Referencement</option>
-                    </select>
-                </li>
-                <il>    
-                    <!-- <label for="msg">Idée du tattoo</label> -->
-                    <textarea name="idée du site" placeholder="idée du site, et prestation supplémentaire" required></textarea>
-                </il>   
-               
-            </ul>    
-
-            <div class=h-captcha data-captcha=true></div>
-
-           
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         
-            
-            <input type="hidden" name="redirect" value="https://entraks-tattoo-shop.vercel.app/"> 
+        
 
-</body>            
-           
+    
+
+<!-- partial -->
+<script>
+    window.onload = function() {
+        // Reset the form fields when the page loads
+        document.getElementById("form-ec-craft").reset();
+    };
+
+    const form = document.getElementById('form-ec-craft');
+    
+    form.addEventListener('submit', function(e) {
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+    
+        if (!hCaptcha) {
+            e.preventDefault();
+            alert("Please fill out captcha field");
+            return;
+        }
+    });
+</script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>
 
