@@ -17,6 +17,7 @@ body{
   position: relative;
   overflow: hidden;
 } 
+
 .container{
   max-width: 800px;
   background: #fff;
@@ -25,6 +26,9 @@ body{
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   z-index: 1;
   margin-top: 200px;
+}
+div.container{
+    margin-top: 150px;
 }
 .container .text {
     text-align: center;
@@ -262,6 +266,14 @@ select {
       transform: scale(0.8);
     }
   }
-  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
 
   
