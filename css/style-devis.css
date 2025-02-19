@@ -29,6 +29,7 @@ body{
 }
 div.container{
     margin-top: 150px;
+    margin-bottom: 150px;
 }
 .container .text {
     text-align: center;
@@ -200,38 +201,38 @@ select {
   }
   
   .small{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     left: -100px;
-    bottom: -100px;
+    bottom: 400px;
   }
   
   .medium{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     left: -200px;
-    bottom: -200px;
+    bottom: 325px;
   }
   
   .large{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     left: -300px;
-    bottom: -300px;
+    bottom: 225px;
   }
   
   .xlarge{
-    width: 800px;
-    height: 800px;
+    width: 700px;
+    height: 700px;
     left: -400px;
-    bottom: -400px;
+    bottom: 125px;
   }
   
   .xxlarge{
-    width: 1000px;
-    height: 1000px;
+    width: 900px;
+    height: 900px;
     left: -500px;
-    bottom: -500px;
+    bottom: 25px;
   }
   
   .shade1{
@@ -277,3 +278,5 @@ select {
 }
 
   
+
+
