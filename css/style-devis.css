@@ -16,16 +16,26 @@ body{
   background: linear-gradient(115deg, #74a7ff 10%, #d3e2ff 90%); 
   position: relative;
   overflow: hidden;
+  flex-direction: column;
 } 
 
 .container{
-  max-width: 800px;
+  /* max-width: 800px;
   background: #fff;
   width: 800px;
   padding: 25px 40px 10px 40px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   z-index: 1;
-  margin-top: 200px;
+  margin-top: 200px; */
+    position: relative;
+    z-index: 2; /* Assurez-vous que le formulaire est devant les cercles */
+    width: 100%;
+    max-width: 800px; /* Ajustez cette valeur selon vos besoins */
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent pour le formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 div.container{
     margin-top: 150px;
@@ -168,7 +178,7 @@ select {
     font: inherit;
     /* Personalize */
     width: 320px;
-    height: 45px;
+    height: 40px;
     padding: 0 4em 0 1em;
     background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center/1.4em, linear-gradient(to left, rgb(44, 117, 206) 3em, rgb(255, 255, 255) 3em);
     color: rgb(0, 0, 0);
@@ -191,7 +201,15 @@ select {
   }
 
 
-  
+  .ripple-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ajustez cette valeur selon vos besoins */
+    overflow: hidden;
+    z-index: 1;
+  }
   .circle{
     position: absolute;
     border-radius: 50%;
@@ -280,3 +298,12 @@ select {
   
 
 
+.footer-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Assurez-vous que le footer prend toute la largeur */
+    position: relative; /* Assurez-vous que le footer est positionné correctement */
+    bottom: 0; /* Assurez-vous que le footer est en bas de la page */
+}
