@@ -279,10 +279,17 @@ html, body {
     justify-content: space-between;
     flex-direction: column;
     color: white;
-    background-image: url('../content/texture.jpg');
-    background-size: cover; /* Ajuste l'image pour remplir la div */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    /* background-image: url('../content/texture.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  */
+    background: repeating-linear-gradient(
+        45deg,
+        #2a68cb,
+        #2a68cb 10px,
+        #74a7ff 10px,
+        #74a7ff 20px
+    );
     padding: 20px;
     padding-bottom: 90px;
     padding-top: 100px;
@@ -544,7 +551,12 @@ html, body {
 .coupenvoie{
     background-image: url('../content/img/coupdenvoi-card.svg');
 }
-
+.renault-logo{
+    background-image: url('../content/img/renault-logo.jpg');
+}
+.renault{
+    background-image: url('../content/img/renault-pres.png');
+}
 
 .card-front:before {
     content: '';
