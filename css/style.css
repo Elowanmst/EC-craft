@@ -877,23 +877,23 @@ body {
 
 
 .entraks {
-    background-image: url('../content/img/entraks.svg');
+    background-image: url('../content/img/entraks.webp');
 }
 .entraks-logo {
-    background-image: url('../content/img/Logo-entraks.svg');
+    background-image: url('../content/img/Logo-entraks.webp');
 }
 .coupenvoie-logo{
     background-image: url('../content/img/logoCDE-black.svg');
 
 }
 .coupenvoie{
-    background-image: url('../content/img/coupdenvoi-card.svg');
+    background-image: url('../content/img/coupdenvoi-card.webp');
 }
 .renault-logo{
     background-image: url('../content/img/renault-logo.jpg');
 }
 .renault{
-    background-image: url('../content/img/renault-pres.png');
+    background-image: url('../content/img/renault-pres.webp');
 }
 
 .card-front:before {
